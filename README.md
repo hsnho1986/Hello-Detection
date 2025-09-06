@@ -21,3 +21,28 @@ We recommend running the notebook in a virtual environment. You only need a Jupy
 For details, please refer to [Installation Guide](../../README.md).
 
 <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=5b5a4db0-7875-4bfb-bdbd-01698b5b1a77&file=notebooks/hello-detection/README.md" />
+
+## Web Interface
+
+An optional Gradio-based web application is provided in `web_ui.py` for
+interactive testing of the text detection model.
+
+1. Install the extra dependency:
+
+   ```bash
+   pip install gradio
+   ```
+
+2. Launch the interface from the command line:
+
+   ```bash
+   python web_ui.py
+   ```
+
+   When running inside a Jupyter notebook, execute:
+
+   ```python
+   import web_ui
+   web_ui.demo.launch()
+   ```
+
